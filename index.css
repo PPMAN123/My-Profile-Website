@@ -1,0 +1,113 @@
+body{
+    margin : 0px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+header{
+    background: linear-gradient(to right, #6b64fe, #7df0fe);
+    padding: 25px 10%;
+}
+
+.header-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.nav-item{
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.5s linear;
+    margin-left: 30px;
+}
+
+.nav-item:hover{
+    color: #aaaaaa;
+}
+
+.card{
+    border-radius: 10px;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 2px 4px 0 rgb(14, 30, 37);
+    transform: translateY(150px);
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+figure{
+    margin: 0px;
+}
+
+video{
+    border-radius: 10px;
+}
+
+.content{
+    padding-left: 50px;
+}
+
+p{
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+#hello{
+    color: rgb(104, 104, 104);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#name{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+#status{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#intro{
+    color: #838383;
+    font-size: 14px;
+}
+
+#birthday{
+    color: #838383;
+    font-size: 14px;
+}  
+
+#phone-number{
+    color: #838383;
+    font-size: 14px;
+}
+
+#email{
+    color: #838383;
+    font-size: 14px;
+}
+
+#adress{
+    color: #838383;
+    font-size: 14px;
+}
+
+i{
+    margin-right: 10px;
+    color: #6b64fe;
+}
