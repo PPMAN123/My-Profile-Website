@@ -12,24 +12,41 @@
 <body>
     <header>
         <div class="header-area">
-            <div>
+            <div class="hidden">
                 <p  class="logo">
                     Ethan Zhou
                 </p>
             </div>
-            <nav>
+            <a href="" class="mobile-nav-anchor">
+                <i class="fas fa-bars"></i>
+            </a>
+            <nav class="mobile-nav">
+                <a href="" class="mobile-nav-anchor">
+                    <i class="fas fa-times" style="color: #aaa;"></i>
+                </a>
                 <a class = "nav-item" href="/">
+                    Home
+                    </a>
+                    <a class = "nav-item" href="/about">
+                        About
+                    </a>
+                    <a class = "nav-item" href="/contact">
+                        Contact
+                    </a>
+            </nav>
+            <nav class="desktop-nav">
+                <a class = "nav-item hidden" href="/">
                 Home
                 </a>
-                <a class = "nav-item" href="/about">
+                <a class = "nav-item hidden" href="/about">
                     About
                 </a>
-                <a class = "nav-item" href="/contact">
+                <a class = "nav-item hidden" href="/contact">
                     Contact
                 </a>
             </nav>
         </div>
-        <section class="card">
+        <section class="card hidden">
             <figure>
                 <video controls>
                     <source src="./output0.mp4" type="video/mp4">
@@ -42,29 +59,43 @@
                 <p id="intro">Hi, I'm a nerd who likes to make stupid shit and post it on instagram and nobody actually watches them.</p>
                 <br>
                 <p id="birthday">
-                    <i class="far fa-calendar-alt"></i>
+                    <i class="far fa-calendar-alt id-icons"></i>
                     4th May, 2006
                 </p>
                 <p id="phone-number">
-                    <i class="fas fa-phone-alt"></i>
+                    <i class="fas fa-phone-alt id-icons"></i>
                     1-800-EATMYCOOM
                 </p>
                 <p id="email">
-                    <i class="far fa-envelope"></i>
+                    <i class="far fa-envelope id-icons"></i>
                     ethan.zhou0504@gmail.com
                 </p>
                 <p id="adress">
-                    <i class="fas fa-home"></i>
+                    <i class="fas fa-home id-icons"></i>
                     North York
                 </p>
                 <br>
-                <div class="buttons">
-                    <a class="link-icons" href="https://www.instagram.com/fuckingfuckfuckfuckingfuckfuck/" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a class="link-icons" href="https://discord.gg/9SERwE">
-                        <i class="fab fa-discord"></i>
-                    </a>
+                <div class="social-media">
+                    <div class="social-media-div">
+                        <a class="link-icons" href="https://www.instagram.com/fuckingfuckfuckfuckingfuckfuck/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <div class="tooltip instagram-tooltip">
+                            <p class="tooltip-text">
+                                instagram
+                            </p>
+                        </div>
+                    </div>                  
+                    <div class="social-media-div">
+                        <a class="link-icons" href="https://discord.gg/NewwpH" target="_blank">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <div class="tooltip discord-tooltip">
+                            <p class="tooltip-text">
+                                discord
+                            </p>
+                        </div>         
+                    </div>
                 </div>
             </div>
         </section>
