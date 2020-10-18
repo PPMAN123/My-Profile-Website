@@ -4,7 +4,7 @@ const triggerFadeIn = () =>{
         setTimeout(() => {
             hiddenElement.style.opacity = 1
             hiddenElement.style.transform='translateY(0px)'
-        }, index*600);
+        }, index*100);
     })
 }
 

@@ -21,6 +21,10 @@ header{
     text-transform: uppercase;
 }
 
+.logo-anchor{
+    text-decoration: none;
+}
+
 .nav-item{
     color: white;
     font-size: 14px;
@@ -42,7 +46,7 @@ header{
     box-shadow: 0 2px 4px 0 rgb(14, 30, 37,0.3);
     margin-top: 150px;
     margin-bottom: -150px;
-    justify-content: space-between;
+    justify-content: space-beween;
     align-items: center;
     display: flex;
 }
@@ -194,6 +198,68 @@ a{
     z-index: 1;
 }
 
+.about-video{
+    display: flex;
+    border-radius: 2px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+}
+
+.description{
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+.description-text{
+    color: #494949;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.highlight-description{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.overwatch-highlight{
+    border-radius: 10px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-title{
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.contact-input-field{
+    width: 60%;
+    padding: 10px;
+    font-size: 15px;
+    box-shadow: 0 2px 4px 0 rgba(0, 179, 255, 0.3);
+    border: 1px solid rgba(0, 179, 255, 0.87);
+}
+
+.contact-input-field:focus{
+    outline: 2px solid rgba(0, 179, 255, 0.87);
+}
+
+
 @media (max-width : 768px){
     .card{
         flex-direction: column;
@@ -209,6 +275,7 @@ a{
     .content{
         padding-left: 0;
         text-align: center;
+        padding-top: 25px;
     }
     .social-media{
         justify-content: center;
@@ -218,6 +285,7 @@ a{
         color: white;
         margin-bottom: 20px;
         text-decoration: none;
+        width: fit-content;
     }
 
     .desktop-nav{
