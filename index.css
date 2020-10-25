@@ -248,17 +248,32 @@ a{
 }
 
 .contact-input-field{
-    width: 60%;
     padding: 10px;
     font-size: 15px;
     box-shadow: 0 2px 4px 0 rgba(0, 179, 255, 0.3);
     border: 1px solid rgba(0, 179, 255, 0.87);
+    margin-bottom: 20px;
+    resize: none;
+    border-radius: 5px;
 }
 
 .contact-input-field:focus{
     outline: 2px solid rgba(0, 179, 255, 0.87);
 }
 
+.contact-message{
+    font: 500 15px Sans-serif;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+#submit-button{
+    font: 500 15px Sans-serif;
+}
 
 @media (max-width : 768px){
     .card{

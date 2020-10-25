@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/58cebb13a8.js" crossorigin="anonymous"></script>
     <script src="./index.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body>
     <header>
@@ -53,7 +54,11 @@
                 <p class="contact-title">
                     Contact Us
                 </p>
-                <input type="text" required name="name" class="contact-input-field" placeholder="Enter your name here">
+                <form class="contact-form">
+                    <input type="name" required name="name" class="contact-input-field" placeholder="Enter your name here...">
+                    <textarea name="message" cols="30" rows="10" placeholder="Enter your message here..." class="contact-input-field contact-message" maxlength="500"></textarea>
+                    <button id="submit-button" class="contact-input-field g-recaptcha" data-sitekey="6LeSTtsZAAAAANori3oK7H1jToUHx8xhtR-mZsAi" data-callback='onContactFormSubmit' data-action='submit'>Submit</button>
+                </form>
             </div>
         </section>
     </header>
