@@ -29,18 +29,20 @@ const attachMobileNavButton = () =>{
 
 const attatchOnSubmitToForm = () =>{
     const form = document.querySelector('form.contact-form');
-    form.addEventListener('submit' , e =>{
+    if(form){form.addEventListener('submit' , e =>{
         e.preventDefault();
         const name = form.querySelector('[name="name"]').value;
         const message = form.querySelector('[name="message"]').value;
         window.open(`mailto:ethan.zhou0504@gmail.com?subject=FeedBack From ${name}&body=${message}`)
-    })
+    })}
 }
 
 window.onContactFormSubmit = token =>{
     console.log(token);
     const form = document.querySelector('form.contact-form');
-    form.submit();
+    if(form){
+        form.submit();
+    }
 }
 
 window.onload = function(){
