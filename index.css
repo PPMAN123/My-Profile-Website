@@ -12,6 +12,18 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 25px 10%;
+    width: 80%;
+    z-index: 1;
+    background: rgba(24, 211, 211, 0.8);
+    transition: all 0.5s ease;
+}
+
+.header-area.hide{
+    top: -100px;
 }
 
 .logo{
