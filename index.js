@@ -15,7 +15,7 @@ const toggleMobileNav = (e) => {
         //shown on the page
         mobileNav.classList.remove('show');
     }else{
-        //when it's hidden, and now is clicked
+        //when it's hidden, and now is open
         mobileNav.classList.add('show');
     }
 }
@@ -88,15 +88,32 @@ const requestForImage = () =>{
     })
 }
 
-// const asyncMethod = async () =>{
+const handleLocationSearchSuccess = position =>{
+    const {coords} = position;
+    const {longitude, latitude} = coords;
 
-// }
+    window.open(`https://www.google.com/maps/place/${latitude},${longitude}`)
+    alert(`you are at lon:${longitude}, lat:${latitude}`)
+}
+
+const handleLocationSearchFailed = () =>{
+    alert('y u no trust us')
+}
+
+const getLocation = () =>{
+    if(!navigator.geolocation){
+        alert('GET FUCKING CHROME YOU PLEB SHIT')
+    }else{
+        navigator.geolocation.getCurrentPosition(handleLocationSearchSuccess, handleLocationSearchFailed);
+    }
+}
 
 window.onload = function(){
     triggerFadeIn();
     attachMobileNavButton();
     attatchOnSubmitToForm();
     attachListenerToScroll();
+    getLocation();
     // attachListenerToWindowUnload();
     // alert("boo");
 }
@@ -106,3 +123,7 @@ window.onload = function(){
 //2. POST
 //3. DELETE
 //4. PATCH
+
+//global browser functions
+//window.document = the entire html document
+//
